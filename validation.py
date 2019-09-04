@@ -1,5 +1,5 @@
 def valInt(*args):
-    """ DocString """
+    """Funcion valInt"""
     if len(args)==1:print(isinstance(args[0],int))
     if len(args)==2:
         if args[1][0]<args[1][1]:print("True") if type(args[0])==int and type(args[1])==list and args[0]>=args[1][0] and args[0]<=args[1][1] or type(args[0])==int and type(args[1])==tuple and args[0]>args[1][0] and args[0]<args[1][1] else print("False")
@@ -8,7 +8,7 @@ def valInt(*args):
     if len(args)>2 or len(args)==0: print("La fauncion vallnt solo acepta 1 o 2 argumentos")
     return args
 def valFloat(*args):
-    """DocString"""
+    """Funcion valFloat"""
     if len(args)==1:print(isinstance(args[0],float))
     if len(args)==2:
         if args[1][0]<args[1][1]:print("True") if type(args[0])==float and type(args[1])==list and args[0]>=args[1][0] and args[0]<=args[1][1] or type(args[0])==float and type(args[1])==tuple and args[0]>args[1][0] and args[0]<args[1][1] else print("False")
@@ -17,7 +17,7 @@ def valFloat(*args):
     if len(args)>2 or len(args)==0:print("La funcion valFloat solo acepta 1 o 2 argumentos")
     return args
 def valComplex(*args):
-    """DocString"""
+    """Funcion valComplex"""
     if len(args)==1:print(isinstance(args[0],complex))
     if len(args)==2:
         if args[1][0]<args[1][1]:print("True") if type(args[0])==complex and type(args[1])==list and abs(args[0])>=args[1][0] and abs(args[0])<=args[1][1] or type(args[0])==complex and type(args[1])==tuple and abs(args[0])>args[1][0] and abs(args[0])<args[1][1] else print("False")
@@ -26,7 +26,7 @@ def valComplex(*args):
     if len(args)>2 or len(args)==0:print("La funcion valFloat solo acepta 1 o 2 argumentos")
     return args
 def valList(*args):
-    """DocString"""
+    """Funcion valList"""
     if len(args)==1:print(isinstance(args[0],list))
     if len(args)==3:
         print("True") if type(args[0])==list and type(args[1])==list and args[2]=="value" and args[0]==args[1] or args[2]=="len" and type(args[0])==list and type(args[1])==int and len(args[0])==args[1] else print("False")
