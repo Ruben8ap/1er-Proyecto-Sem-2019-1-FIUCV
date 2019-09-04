@@ -11,18 +11,18 @@ def valFloat(*args):
     """DocString"""
     if len(args)==1:print(isinstance(args[0],float))
     if len(args)==2:
-        print("True") if type(args[0])==float and type(args[1])==list and args[0]>=args[1][0] and args[0]<=args[1][1] or type(args[0])==float and type(args[1])==tuple and args[0]>args[1][0] and args[0]<args[1][1] else print("False")
-        if type(args[1])!=list and type(args[1])!=tuple:raise TypeError("El segundo argumento solo recibe tipo lista o tupla y usted ha ingresado: {}".format(type(args[1])))
-        if args[1][0]>args[1][1] or len(args[1])>2: raise ValueError("El segundo argumento no puede estar ordenado de manera decreciente")
+        if args[1][0]<args[1][1]:print("True") if type(args[0])==float and type(args[1])==list and args[0]>=args[1][0] and args[0]<=args[1][1] or type(args[0])==float and type(args[1])==tuple and args[0]>args[1][0] and args[0]<args[1][1] else print("False")
+    if type(args[1])!=list and type(args[1])!=tuple:raise TypeError("El segundo argumento solo recibe tipo lista o tupla y usted ha ingresado: {}".format(type(args[1])))
+    if args[1][0]>args[1][1] or len(args[1])>2: raise ValueError("El segundo argumento no puede estar ordenado de manera decreciente")
     if len(args)>2 or len(args)==0:print("La funcion valFloat solo acepta 1 o 2 argumentos")
     return args
 def valComplex(*args):
     """DocString"""
     if len(args)==1:print(isinstance(args[0],complex))
     if len(args)==2:
-        print("True") if type(args[0])==complex and type(args[1])==list and abs(args[0])>=args[1][0] and abs(args[0])<=args[1][1] or type(args[0])==complex and type(args[1])==tuple and abs(args[0])>args[1][0] and abs(args[0])<args[1][1] else print("False")
-        if type(args[1])!=list and type(args[1])!=tuple:raise TypeError("El segundo argumento solo recibe tipo lista o tupla y usted ha ingresado: {}".format(type(args[1])))
-        if args[1][0]>args[1][1] or len(args[1])>2: raise ValueError("El segundo argumento no puede estar ordenado de manera decreciente")
+        if args[1][0]<args[1][1]:print("True") if type(args[0])==complex and type(args[1])==list and abs(args[0])>=args[1][0] and abs(args[0])<=args[1][1] or type(args[0])==complex and type(args[1])==tuple and abs(args[0])>args[1][0] and abs(args[0])<args[1][1] else print("False")
+    if type(args[1])!=list and type(args[1])!=tuple:raise TypeError("El segundo argumento solo recibe tipo lista o tupla y usted ha ingresado: {}".format(type(args[1])))
+    if args[1][0]>args[1][1] or len(args[1])>2: raise ValueError("El segundo argumento no puede estar ordenado de manera decreciente")
     if len(args)>2 or len(args)==0:print("La funcion valFloat solo acepta 1 o 2 argumentos")
     return args
 def valList(*args):
