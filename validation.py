@@ -34,4 +34,3 @@ def valList(*args):
         if args[2]!="len" and args[2]!="value": raise ValueError("El tercer argumento solo admite 2 entradas (len ó value) y usted ha ingresado: {}".format(args[2]))
     if len(args)==2 or len(args)>3 or len(args)==0: print("La funcion valList solo acepta 1 o 3 argumentos")
     return args
-    return args
