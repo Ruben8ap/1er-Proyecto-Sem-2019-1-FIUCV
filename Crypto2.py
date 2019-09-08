@@ -1,4 +1,5 @@
 def Codificar(texto):
+    """Funcion para Cifrar un texto, con el Cifrado Cesar"""
     Desplazamiento=2
     Cifrado=""
     if texto==texto.upper():lista="A,B,C,D,E,F,G,H,I,J,K,L,M,N,Ñ,O,P,Q,R,S,T,U,V,W,X,Y,Z"
@@ -9,6 +10,7 @@ def Codificar(texto):
     print(Cifrado)
     return Cifrado
 def Descodificar(texto):
+    """Funcion para Descodificar un texto, con el Cifrado Cesar"""
     Desplazamiento=2
     Descifrado=""
     if texto==texto.upper():lista="A,B,C,D,E,F,G,H,I,J,K,L,M,N,Ñ,O,P,Q,R,S,T,U,V,W,X,Y,Z"
