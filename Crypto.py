@@ -4,7 +4,7 @@ def cifrar(cadena, clave): #Funcion para cifrar la cadena de texto plana
     for letra in cadena:
         suma = Abecedario.find(letra) + clave
         modulo = int(suma) % len(Abecedario)
-        texto_cifrado = texto_cifrado + str(abc[modulo])
+        texto_cifrado = texto_cifrado + str(Abecedario[modulo])
     return texto_cifrado
 def decifrar(cadena, clave): #Funcion para decifrar la cadena de texto plana
     texto_cifrado = ''
