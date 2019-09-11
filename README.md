@@ -1,7 +1,7 @@
 # 1er-Proyecto-Sem-2019-1-FIUCV
 Resolución del Proyecto:   (1)Modulo Validation      (2)Modulo Algebra       (3)Modulo Crypto
 
-Avances del proyecto: FECHA TOPE PARA FINALIZAR 22/10/2019 , FECHA DE ENTREGA 24/10/2019 
+Avances del proyecto: SE DEBE FINALIZAR ANTES DEL 22/10/2019 , FECHA DE ENTREGA 24/10/2019 
 
 Programas en funcionamiento, a falta de revision final y posibles cambios menores:
 
