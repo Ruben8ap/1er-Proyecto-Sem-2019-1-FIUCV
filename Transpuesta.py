@@ -24,8 +24,6 @@ def traspuesta(A):
                     Transposicion=[[A[j][i] for j in range(filas)] for i in range(columnas)]
                     print("\nMatriz Transpuesta\n")
                     for k in Transposicion:print(k)
-                    print(columnas)
-                    print(filas)
         else:
             print("La funcion traspuesta, solo permite la entrada de tipo lista")
     else:
