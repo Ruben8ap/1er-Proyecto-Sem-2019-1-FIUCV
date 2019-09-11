@@ -3,7 +3,7 @@
 
 **Avances del proyecto: SE DEBE FINALIZAR ANTES DEL 22/10/2019 , FECHA DE ENTREGA 24/10/2019** 
 
-**Funciones en funcionamiento, a falta de revision final, (sujeto a cambios menores)**:
+**Funciones en funcionamiento, a falta de revision final, (sujetas a cambios menores)**:
 
   Modulo Validation:
   
@@ -21,14 +21,14 @@
   
     *crypto
 
-**Funciones en funcionamiento, a falta de los condicionales para los tipos de entradas, (sujeto a cambios mayores)**:
+**Funciones en funcionamiento, a falta de los condicionales para los tipos de entradas, (sujetas a cambios mayores)**:
 
   Modulo Algebra:
   
     *Determinante
     *Producto de Matrices 
     
-**Funciones en construccion**:
+**Funciones en construccion (sujetas a cambios mayores)**:
 
   Modulo Algebra:
   
