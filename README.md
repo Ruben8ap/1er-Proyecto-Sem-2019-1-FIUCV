@@ -26,9 +26,14 @@ Funciones en funcionamiento, a falta de los condicionales para los tipos de entr
   Modulo Algebra:
   
     *Determinante
-    *Producto de Matrices
-    *Inversion de Matrices (Gauss-Jordan)  
+    *Producto de Matrices 
     
+Funciones en construccion:
+
+  Modulo Algebra:
+  
+  **Inversion de Matrices (Gauss-Jordan)  
+
 Funciones sin resolver:
 
   Modulo Algebra:
