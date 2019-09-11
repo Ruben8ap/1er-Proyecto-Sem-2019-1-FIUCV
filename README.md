@@ -33,10 +33,4 @@
   Modulo Algebra:
   
     *Inversion de Matrices (Gauss-Jordan)
-
-**Funciones sin resolver**:
-
-  Modulo Algebra:
-  
     *Resolucion de sistema de ecuaciones lineales ( utilizando la funcion Inversion de Matrices)
-    
