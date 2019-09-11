@@ -32,7 +32,7 @@ Funciones en construccion:
 
   Modulo Algebra:
   
-  **Inversion de Matrices (Gauss-Jordan)**  
+  *Inversion de Matrices (Gauss-Jordan)
 
 Funciones sin resolver:
 
