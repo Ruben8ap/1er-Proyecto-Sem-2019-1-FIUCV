@@ -28,7 +28,7 @@
     *Determinante
     *Producto de Matrices 
     
-**Funciones en construccion (sujetas a cambios mayores)**:
+**Funciones en construccion**:
 
   Modulo Algebra:
   
