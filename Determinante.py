@@ -1,4 +1,4 @@
-def det(matriz):
+def determinante(matriz):
     if type(matriz[0])==list and type(matriz[1])==list and type(matriz)==list:
         n=len(matriz)
         if len(matriz)==len(matriz[0]):
@@ -13,7 +13,7 @@ def det(matriz):
                 deter=matriz[x][x]*deter
             print ('\nEl determinante de la matriz es = ',deter)
         else:
-            print("El determinante es solo para matrices cudradas")
+            raise ValueError("El determinante es solo para matrices cudradas")
     else:
-        print("Usted debe ingresar un arreglo de listas de listas")
+        raise TypeError("Usted ha ingresado un tipo de dato invalido")
     return matriz
