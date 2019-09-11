@@ -15,6 +15,7 @@ Funciones en funcionamiento, a falta de revision final, (sujeto a cambios menore
   Modulo Algebra:
 
     *Transpuesta
+    *Producto Cruz
   
   Modulo Crypto:
   
@@ -26,7 +27,6 @@ Funciones en funcionamiento, a falta de los condicionales para los tipos de entr
   
     *Determinante
     *Producto de Matrices
-    *Producto Cruz
     *Inversion de Matrices (Gauss-Jordan)  
     
 Funciones sin resolver:
