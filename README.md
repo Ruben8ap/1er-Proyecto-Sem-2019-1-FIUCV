@@ -26,11 +26,12 @@ Funciones en funcionamiento, a falta de los condicionales para los tipos de entr
   
     *Determinante
     *Producto de Matrices
-    *Inversion de Matrices (Gauss-Jordan)
     *Producto Cruz
     
-Funciones sin resolver:
+Funciones sin resolver o sin funcionar plenamente:
 
   Modulo Algebra:
   
+    *Inversion de Matrices (Gauss-Jordan)  
     *Resolucion de sistema de ecuaciones lineales ( utilizando la funcion Inversion de Matrices)
+    
