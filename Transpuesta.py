@@ -1,5 +1,5 @@
 def traspuesta(A):
-    if len(A)==len(A[0])-1:
+    try:
         if type(A)==list:
             aux=[]
             aux_2=[]
@@ -26,6 +26,6 @@ def traspuesta(A):
                     for k in Transposicion:print(k)
         else:
             print("La funcion traspuesta, solo permite la entrada de tipo lista")
-    else:
-        raise ValueError("Ha ingresado datos invalidos")
+    except:
+        print("Usted ha ingresado algunos datos invalidos, revise e intente nuevamente")
     return A
