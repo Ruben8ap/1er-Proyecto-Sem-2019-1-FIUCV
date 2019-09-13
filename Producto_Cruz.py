@@ -1,5 +1,5 @@
 def ProductoCruz(*args):
-    Final=[]
+    Final= []
     Resultado=[]
     aux=[]
     for j in args[0][0] and args[0][1]:

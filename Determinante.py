@@ -1,5 +1,5 @@
 def determinante(matriz):
-    if type(matriz[0])==list and type(matriz[1])==list and type(matriz)==list:
+    if type(matriz[0] and type(matriz[1]) and type(matriz))==type(list):
         n=len(matriz)
         if len(matriz)==len(matriz[0]):
             for z in range (n-1):
