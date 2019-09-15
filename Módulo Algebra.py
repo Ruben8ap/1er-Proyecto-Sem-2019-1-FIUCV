@@ -80,7 +80,7 @@ def Transpuesta(matriz):
                 columnas = len(matriz[0]) #Definimos las columnas de la matriz
                 print("\nMatriz Original\n") #Imprimimos la matriz original 
                 for x in matriz:print(x) #Iteramos para mostrar el arreglo en forma de listas de listas e imprimimos
-                Transposicion=[[matriz[j][i] for j in range(filas)] for i in range(columnas)]
+                Transposicion=[[matriz[j][i] for j in range(filas)] for i in range(columnas)]#Iteramos por cada elemento de las filas y columnas de la matriz trasponiendolas respectivamente
                 print("\nMatriz Transpuesta\n") #Imprimimos encabezado
                 for k in Transposicion:print(k) #Iteramos para mostrar el arreglo en forma de listas de listas e imprimimos
     else:print("La funcion traspuesta, solo permite la entrada de matrices que emulen el arreglo listas de listas") #Error correspondiente para cuando no seas un arreglo de listas de listas
