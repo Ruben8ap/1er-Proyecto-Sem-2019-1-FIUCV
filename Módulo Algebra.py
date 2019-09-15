@@ -1,5 +1,5 @@
 def Producto_Matricial(matriz_1,matriz_2):
-    """Fución para ejecutar la multilicación entre dos matrices"""
+    """Fución para ejecutar la multiplicación entre dos matrices"""
     aux=[]
     aux_2=[]
     aux_3=[]
