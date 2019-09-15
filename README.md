@@ -14,11 +14,11 @@
     
   Modulo Algebra:
 
-    *Determinante
-    *Producto de Matrices
+    *Producto_Matricial
+    *Producto_Cruz
     *Transpuesta
-    *Producto Cruz
-
+    *Determinante
+    
   Modulo Crypto:
 
     *crypto
