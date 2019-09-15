@@ -20,7 +20,8 @@
     
   Módulo Crypto:
 
-    *crypto
+    *Codificar
+    *Descodificar
 
 **Funciones en construccion**:
 
