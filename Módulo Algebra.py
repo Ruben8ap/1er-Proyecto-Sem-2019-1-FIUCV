@@ -26,10 +26,10 @@ def Producto_Matricial(matriz_1,matriz_2):
         if columna_matriz_1 != fila_matriz_2:raise ValueError("No se puede ejecutar la multipicacion de matrices, el numero de filas de la primera matriz debe ser igual al numero de filas de la segunda matriz") #Verificamos la condicion de multiplicacion de matrices respecto a la filas y columnas
         C = [] #Creamos una lista C que sera el resultado de la mutiplicacion de matrices
         for i in range(len(matriz_1)): #Iteramos por cada elemento de la matriz _1 segun su longitud
-            C.append([0]*(len(matriz_2[0]))) 
+            C.append([0]*(len(matriz_2[0])))#Generamos la dimension de la matriz C (filas x columnas) siendo el numero de columnas de la matriz_1 y el numero de filas de la matriz_2
         for i in range(len(matriz_1)): #Iteramos por cada elemento de la matriz_2 segun su longitud 
             for j in range(len(matriz_2[0])): #Iteramos por cada elemento de la matriz_2 en la posicion [0]
-                for k in range(len(matriz_2)): C [i][j] += matriz_1[i][k]*matriz_2[k][j]
+                for k in range(len(matriz_2)): C [i][j] += matriz_1[i][k]*matriz_2[k][j]#Multiplicamos cada elemento de las filas de la matriz_1 con cada elemento de las columnas de la matriz_2, sumando cada resultado para generar cada elemento de la matriz C
         print("\nEl resultado de la multiplicaión de matrices es:\n") #Imprimimos el resultado de la multiplicacion de las matrices
         for x in C: print(x) #Iteramos sobre cada elemento de la matriz C
     else:raise TypeError(" La Funcion Producto_Matricial solo acepta como entrada matrices que emulen el arreglo listas de listas") #Si el arreglo de las matrices no son de tipo listas de listas , arrojamos este error
