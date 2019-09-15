@@ -1,4 +1,4 @@
-def productoMatricial(matriz_1,matriz_2):
+def Producto_Matricial(matriz_1,matriz_2):
     aux=[]
     aux_2=[]
     aux_3=[]
@@ -33,7 +33,7 @@ def productoMatricial(matriz_1,matriz_2):
         for x in C: print(x)
     else:raise TypeError("Debe ingresar las matrices como un arreglo de listas de lista")
     return matriz_1,matriz_2
-def ProductoCruz(vectores):
+def Producto_Cruz(vectores):
     Final= []
     Resultado=[]
     aux=[]
@@ -81,7 +81,7 @@ def Transpuesta(matriz):
                 for k in Transposicion:print(k)
     else:print("La funcion traspuesta, solo permite la entrada de tipo lista")
     return matriz
-def determinante(matriz):
+def Determinante(matriz):
     aux=[]
     aux_2=[]
     for h in matriz:
