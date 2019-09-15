@@ -7,15 +7,15 @@ def Producto_Matricial(matriz_1,matriz_2):
     for h in matriz_1: #Iteramos sobre los elementos de la matriz_1
         if type(h)==list:aux.append(h) #Verificamos si cada uno de ellos son de tipo lista y los agregamos la lista aux
         else: raise TypeError("Solo puede ingresar elementos tipo lista dentro de la funcion Producto_Matricial") #Si alguno de ellos no son tipo lista arrojamos este error
-        for j in h: #Interamos sobre los elementos mas internos de la matriz.
+        for j in h: #Iteramos sobre los elementos mas internos de la matriz.
             if type(j)==type("str"):aux_2.append(j) #Verificamos si hay algun tipo string y lo agregamos a la lista aux_2
-    for q in matriz_2: #Interamos sobre los elementos de la matriz_2
+    for q in matriz_2: #Iteramos sobre los elementos de la matriz_2
         if type(q)==list:aux_3.append(q) #Verificamos si cada uno de ellos son de tipo lista y los agregamos la lista aux_3
         else:raise TypeError("Solo puede ingresar  elementos tipo lista dentro de la funcion Producto_Matricial") #Si alguno de ellos no son tipo lista arrojamos este error
         for d in q: #Interamos sobre los elementos de la matriz_2
             if type(d)==type("str"):aux_4.append(d) #Verificamos si hay algun tipo string y lo agregamos a la lista aux_3
     if (len(aux_2)>=1 or len(aux_4)>=1):raise TypeError("No se puede ingresar tipo datos string dentro de la funcion Produto_Matricial") #Planteamos la condicion de error para cuando algunas de las listas aux estan llenas respectivamente
-    for g in matriz_1: #Interamos sobre los elementos de la matriz_1 
+    for g in matriz_1: #Iteramos sobre los elementos de la matriz_1 
         if len(g)!=len(h):raise ValueError("Todas las filas deben tener la misma cantidad de columnas") #Verificamos si para cada elemento "g" y "h" poseen la misma longitud de columnas y arrojamos el errro correspondiente
     for z in matriz_2: #Interamos sobre los elementos de la matriz_2
         if len(z)!=len(q):raise ValueError("Todas las filas deben tener la misma cantidad de columnas") #Verificamos si para cada elemento "z" y "q" poseen la misma longitud de columnas y arrojamos el errro correspondiente
@@ -109,7 +109,7 @@ def Determinante(matriz):
                 for z in range (n-1): #Iteramos por cada elemento de la matriz hasta la longitud de la matriz menos la ultima posicion
                     for x in range(1, n-z): #Iteramos por cada elemento de la matriz desde la segunda posicion hasta la longitud de la matriz menos la iteracion en "z"
                         if (matriz[z][z] != 0 ): #Condicion que se cumplira solo cuando la matriz en su posicion [z][z] sea distinta de cero
-            #Procedimiento matemático para el cálculo del determinante
+            #Procedimiento matemático para el cálculo del determinante usando el metodo de triangulación superior
                             p = matriz[x+z][z] / matriz[z][z]
                             for y in range (n):matriz[x+z][y] = matriz[x+z][y] - (matriz[z][y]*p)
                 deter=1
