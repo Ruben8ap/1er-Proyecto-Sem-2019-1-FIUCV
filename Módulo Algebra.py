@@ -1,4 +1,5 @@
 def Producto_Matricial(matriz_1,matriz_2):
+    """Fución para ejecutar la multilicación entre dos matrices"""
     aux=[]
     aux_2=[]
     aux_3=[]
@@ -35,6 +36,7 @@ def Producto_Matricial(matriz_1,matriz_2):
     else:raise TypeError(" La Funcion Producto_Matricial solo acepta como entrada matrices que emulen el arreglo listas de listas") #Si el arreglo de las matrices no son de tipo listas de listas , arrojamos este error
     return matriz_1,matriz_2 
 def Producto_Cruz(vectores):
+    """Función para ejecutar el Producto Cruz entre dos vectores"""
     Final= []
     Resultado=[]
     aux=[]
@@ -62,6 +64,7 @@ def Producto_Cruz(vectores):
     else:raise ValueError("La funcion Producto_Cruz solo permite la entrada de dos vectores")#Error correspondiente 
     return vectores
 def Transpuesta(matriz):
+    """Función para ejecutar la matriz traspuesta de una matriz"""
     if type(matriz)==list: #Verificamos si el argumento matriz es de tipo lista
         aux=[]
         aux_2=[]
@@ -86,6 +89,7 @@ def Transpuesta(matriz):
     else:print("La funcion traspuesta, solo permite la entrada de matrices que emulen el arreglo listas de listas") #Error correspondiente para cuando no seas un arreglo de listas de listas
     return matriz
 def Determinante(matriz):
+    """Función para ejecutar el determiante de una matriz"""
     aux=[]
     aux_2=[]
     for h in matriz: #Iteramos para cada elemento del argumento matriz
