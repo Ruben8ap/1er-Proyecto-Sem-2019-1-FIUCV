@@ -110,8 +110,8 @@ def Determinante(matriz):
                     for x in range(1, n-z): #Iteramos por cada elemento de la matriz desde la segunda posicion hasta la longitud de la matriz menos la iteracion en "z"
                         if (matriz[z][z] != 0 ): #Condicion que se cumplira solo cuando la matriz en su posicion [z][z] sea distinta de cero
             #Procedimiento matemático para el cálculo del determinante usando el metodo de triangulación superior
-                            p = matriz[x+z][z] / matriz[z][z]
-                            for y in range (n):matriz[x+z][y] = matriz[x+z][y] - (matriz[z][y]*p)
+                            p = matriz[x+z][z] / matriz[z][z] #Operacion para implantar los respectivos pivotes (unos) de forma escalonada en la matriz
+                            for y in range (n):matriz[x+z][y] = matriz[x+z][y] - (matriz[z][y]*p)#Operacion para implantar ceros debajo de los pivotes
                 deter=1
                 for x in range (n):deter=matriz[x][x]*deter
                 print ('\nEl determinante de la matriz es = ',deter) #Imprimimos el resultado 
