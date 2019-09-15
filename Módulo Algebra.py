@@ -3,7 +3,7 @@ def Producto_Matricial(matriz_1,matriz_2):
     aux_2=[]
     aux_3=[]
     aux_4=[]
-    for h in matriz_1: #Interamos sobre los elementos de la matriz_1
+    for h in matriz_1: #Iteramos sobre los elementos de la matriz_1
         if type(h)==list:aux.append(h) #Verificamos si cada uno de ellos son de tipo lista y los agregamos la lista aux
         else: raise TypeError("Solo puede ingresar elementos tipo lista dentro de la funcion Producto_Matricial") #Si alguno de ellos no son tipo lista arrojamos este error
         for j in h: #Interamos sobre los elementos mas internos de la matriz.
@@ -102,9 +102,10 @@ def Determinante(matriz):
         if len(matriz)==len(aux): #Condicion a ejecutar cuando la longitud de matriz y aux son iguales 
             n=len(matriz) #Definimos a "n" como la longitud del argumento matriz
             if len(matriz)==len(matriz[0]): #Planteamos condicion para cuando la matriz es cuadrada
-                for z in range (n-1): 
-                    for x in range(1, n-z):
-                        if (matriz[z][z] != 0 ):
+                for z in range (n-1): #Iteramos por cada elemento de la matriz hasta la longitud de la matriz menos la ultima posicion
+                    for x in range(1, n-z): #Iteramos por cada elemento de la matriz desde la segunda posicion hasta la longitud de la matriz menos la iteracion en "z"
+                        if (matriz[z][z] != 0 ): #Condicion que se cumplira solo cuando la matriz en su posicion [z][z] sea distinta de cero
+            #Procedimiento matemático para el cálculo del determinante
                             p = matriz[x+z][z] / matriz[z][z]
                             for y in range (n):matriz[x+z][y] = matriz[x+z][y] - (matriz[z][y]*p)
                 deter=1
