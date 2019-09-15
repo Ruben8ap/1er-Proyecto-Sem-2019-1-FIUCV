@@ -3,7 +3,7 @@
 
 **Avances del proyecto: SE DEBE FINALIZAR ANTES DEL 22/10/2019 , FECHA DE ENTREGA 24/10/2019**
 
-**Funciones en funcionamiento, a falta de revision final, (sujetas a cambios minimos)**:
+**Funciones en funcionamiento, a falta de revision final y agregarle el DocString, (sujetas a cambios minimos)**:
 
   Modulo Validation:
 
@@ -14,11 +14,11 @@
     
   Modulo Algebra:
 
-    *Determinante
-    *Producto de Matrices
+    *Producto_Matricial
+    *Producto_Cruz
     *Transpuesta
-    *Producto Cruz
-
+    *Determinante
+    
   Modulo Crypto:
 
     *crypto
