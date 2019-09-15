@@ -5,15 +5,15 @@ def Producto_Matricial(matriz_1,matriz_2):
     aux_4=[]
     for h in matriz_1:
         if type(h)==list:aux.append(h)
-        else: raise TypeError("Solo puede ingresar tipo lista dentro de la funcion")
+        else: raise TypeError("Solo puede ingresar elementos tipo lista dentro de la funcion Producto_Matricial")
         for j in h:
             if type(j)==type("str"):aux_2.append(j)
     for q in matriz_2:
         if type(q)==list:aux_3.append(q)
-        else:raise TypeError("Solo puede ingresar tipo lista dentro de la funcion")
+        else:raise TypeError("Solo puede ingresar  elementos tipo lista dentro de la funcion Producto_Matricial")
         for d in q:
             if type(d)==type("str"):aux_4.append(d)
-    if (len(aux_2)>=1 or len(aux_4)>=1):raise TypeError("No se puede ingresar tipo datos string dentro de esta funcion")
+    if (len(aux_2)>=1 or len(aux_4)>=1):raise TypeError("No se puede ingresar tipo datos string dentro de la funcion Produto_Matricial")
     for g in matriz_1:
         if len(g)!=len(h):raise ValueError("Todas las filas deben tener la misma cantidad de columnas")
     for z in matriz_2:
@@ -23,7 +23,7 @@ def Producto_Matricial(matriz_1,matriz_2):
         columna_matriz_1 = len(matriz_1[0])
         fila_matriz_2 = len(matriz_2)
         columna_matriz_2 = len (matriz_2[0])
-        if columna_matriz_1 != fila_matriz_2:raise ValueError("No se puede ejecutar la multipicacion de matrices")
+        if columna_matriz_1 != fila_matriz_2:raise ValueError("No se puede ejecutar la multipicacion de matrices, el numero de filas de la primera matriz debe ser igual al numero de filas de la segunda matriz")
         C = []
         for i in range(len(matriz_1)):C.append([0]*(len(matriz_2[0])))
         for i in range(len(matriz_1)):
@@ -31,7 +31,7 @@ def Producto_Matricial(matriz_1,matriz_2):
                 for k in range(len(matriz_2)): C [i][j] += matriz_1[i][k]*matriz_2[k][j]
         print("\nEl resultado de la multiplicaión de matrices es:\n")
         for x in C: print(x)
-    else:raise TypeError("Debe ingresar las matrices como un arreglo de listas de lista")
+    else:raise TypeError(" La Funcion Producto_Matricial solo acepta como entrada matrices que emulen el arreglo listas de listas")
     return matriz_1,matriz_2
 def Producto_Cruz(vectores):
     Final= []
@@ -41,7 +41,7 @@ def Producto_Cruz(vectores):
         if type(j)==type("str"):
             aux.append(j)
     if len(aux)>=1:
-        raise  TypeError("No se puede ingresar tipo datos string dentro de esta funcion")
+        raise  TypeError("No se puede ingresar el tipo dato string, dentro de funcion Producto_Cruz")
     if len(vectores)==2:
         if (type(vectores[0]) and type(vectores[1]) and type(vectores))==list:
             if len(vectores[0])==3 and len(vectores[1])==3:
@@ -53,9 +53,9 @@ def Producto_Cruz(vectores):
                 Resultado.append(Multiplicacion_k)
                 Final.append(Resultado)
                 print("\nEl resultado de la multiplicacion vectorial es: {}".format(Final))
-            else:raise ValueError("Usted debe ingresar vectores con 3 componentes")
-        else:raise TypeError("La funcion solo acepta vectores, que emulen un arreglo de listas de listas")
-    else:raise ValueError("Usted debe ingresar unicamente dos vectores.")
+            else:raise ValueError("La funcion Producto_Cruz solo acepta vectores con 3 componentes")
+        else:raise TypeError("La funcion Producto_Cruz solo acepta vectores, que emulen el arreglo listas de listas")
+    else:raise ValueError("La funcion Producto_Cruz solo permite la entrada de dos vectores")
     return vectores
 def Transpuesta(matriz):
     if type(matriz)==list:
@@ -63,12 +63,12 @@ def Transpuesta(matriz):
         aux_2=[]
         for h in matriz:
             if type(h)==list:aux.append(h)
-            else:raise TypeError("Solo puede ingresar tipo lista dentro de la funcion")
+            else:raise TypeError("Los elementos de la funcion Transpuesta deben ser de tipo lista")
             for j in h:
                 if type(j)==type("str"):aux_2.append(j)
         for g in matriz:
             if len(g)!=len(h):raise ValueError("Todas las filas deben tener la misma cantidad de columnas")
-        if len(aux_2)>=1:raise TypeError("No se puede ingresar tipo datos string dentro de esta funcion")
+        if len(aux_2)>=1:raise TypeError("No se puede ingresar tipo datos string dentro de la funcion Transpuesta")
         if len(aux_2)==0:
             if len(matriz)!=len(aux):print("\nLa funcion traspuesta, solo acepta elementos del tipo lista")
             if len(matriz)==len(aux):
@@ -79,19 +79,19 @@ def Transpuesta(matriz):
                 Transposicion=[[matriz[j][i] for j in range(filas)] for i in range(columnas)]
                 print("\nMatriz Transpuesta\n")
                 for k in Transposicion:print(k)
-    else:print("La funcion traspuesta, solo permite la entrada de tipo lista")
+    else:print("La funcion traspuesta, solo permite la entrada de matrices que emulen el arreglo listas de listas")
     return matriz
 def Determinante(matriz):
     aux=[]
     aux_2=[]
     for h in matriz:
         if type(h)==list:aux.append(h)
-        else:raise TypeError("Solo puede ingresar tipo lista dentro de la funcion")
+        else:raise TypeError("La funcion Determinante solo permite la entrada tipo lista dentro de la funcion")
         for j in h:
             if type(j)==type("str"):aux_2.append(j)
     for g in matriz:
         if len(g)!=len(h):raise ValueError("Todas las filas deben tener la misma cantidad de columnas")
-    if len(aux_2)>=1:raise TypeError("No se puede ingresar tipo datos string dentro de esta funcion")
+    if len(aux_2)>=1:raise TypeError("No se puede ingresar tipo datos string dentro de la funcion Determinante")
     if len(aux_2)==0:
         if len(matriz)!=len(aux):print("\nLa funcion determinante, solo acepta elementos del tipo lista")
     if type(matriz)==list:
@@ -107,5 +107,5 @@ def Determinante(matriz):
                 for x in range (n):deter=matriz[x][x]*deter
                 print ('\nEl determinante de la matriz es = ',deter)
             else: raise ValueError("El determinante es solo para matrices cudradas")
-    else: raise TypeError("La funcion determinante solo acepta el tipo de arreglo listas de listas")
+    else: raise TypeError("La funcion determinante solo acepta matrices que emulen el arreglo listas de listas")
     return matriz
