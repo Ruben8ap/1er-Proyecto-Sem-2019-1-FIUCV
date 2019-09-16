@@ -65,7 +65,7 @@ def valList(*args):
     if len(args) == 3:
         if ( type(args[1]) is not int or type(args[1]) is not list ) and type(args[2]) is not "str":
             raise TypeError("Los datos ingresados en el segundo argumento y tercer argumento no son validos")
-        if args[2]!=("len" or "value"):
+        elif args[2]!=("len" or "value"):
             raise ValueError("El tercer argumento solo permite como entrada (value o len) y usted introdujo: {}".format(args[2]))
         elif args[2] == "value" and type(args[0]) is list and type(args[1]) is list and args[0] == args[1]:
             resultado = True
