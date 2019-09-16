@@ -63,13 +63,13 @@ def valList(*args):
         else:
             resultado = False
     if len(args) == 3:
-        if ( type(args[1]) is not int or type(args[1]) is not list ) and type(args[2]) is not "str":
-            raise TypeError("Los datos ingresados en el segundo argumento y tercer argumento no son validos")
-        elif args[2]!=("len" or "value"):
-            raise ValueError("El tercer argumento solo permite como entrada (value o len) y usted introdujo: {}".format(args[2]))
-        elif args[2] == "value" and type(args[0]) is list and type(args[1]) is list and args[0] == args[1]:
+        #if ( type(args[1]) is not int or type(args[1]) is not list ) and type(args[2]) is not "str":
+            #raise TypeError("Los datos ingresados en el segundo argumento y tercer argumento no son validos")
+        #elif args[2]!=("len" or "value"):
+            #raise ValueError("El tercer argumento solo permite como entrada (value o len) y usted introdujo: {}".format(args[2]))
+        if args[2] == "value" and type(args[0]) is list and type(args[1]) is list and args[0] == args[1]:
             resultado = True
-        elif args[2] == "len" and type(args[0]) is list and len(args[0]) == args[1]:
+        if args[2] == "len" and type(args[0]) is list and len(args[0]) == args[1]:
             resultado = True
         #elif args[2] == "value" and (type(args[0]) is not list or type(args[1]) is not list or args[0] != args[1]):
             #resultado = False
