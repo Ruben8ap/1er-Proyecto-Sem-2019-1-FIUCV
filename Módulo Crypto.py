@@ -1,3 +1,4 @@
+#Se le debe preguntar al Prof. si es necesario la encriptación de los números en las cadenas de texto
 def Codificar(texto):
     """Funcion para Cifrar un texto, con el Cifrado Cesar"""
     Desplazamiento=2 #Indicamos el desplazamiento que se ejecutara para cada letra 
