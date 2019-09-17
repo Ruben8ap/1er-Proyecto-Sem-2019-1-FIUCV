@@ -1,4 +1,4 @@
-#Modulo desechado, fue actualizado a la version 2.0
+#Modulo desechado, fue actualizado a la version 2
 
     def Producto_Matricial(matriz_1,matriz_2):
         """Fución para ejecutar la multiplicación entre dos matrices"""
