@@ -27,3 +27,20 @@
 
     *Codificar
     *Descodificar
+
+**Digramas de flujo completados, Revisiones Finales y cambios minimos**:
+
+  Modulo Algebra:
+  
+  *Verificacion_1
+  
+  **Digramas de flujo en construccion**:
+  
+  *Producto_Cruz
+    *Transpuesta_Matriz
+    *Determinante_Matriz
+    *Producto_Matricial
+    *crearUno
+    *crearCero
+    *Matriz_Inversa
+    *Resolucion_Sistema_de_Ecuaciones
