@@ -32,7 +32,7 @@
 
   Modulo Algebra:
   
-  *Verificacion_1
+    *Verificacion_1
   
   **Digramas de flujo en construccion**:
   
