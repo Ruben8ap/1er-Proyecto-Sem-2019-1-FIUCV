@@ -33,10 +33,10 @@
   Modulo Algebra:
   
     *Verificacion_1
+    *Producto_Cruz
   
   **Digramas de flujo en construccion**:
   
-    *Producto_Cruz
     *Transpuesta_Matriz
     *Determinante_Matriz
     *Producto_Matricial
