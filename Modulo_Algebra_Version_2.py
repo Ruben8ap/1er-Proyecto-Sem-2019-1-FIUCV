@@ -4,7 +4,7 @@ def Verificacion_1(matriz):
     if type(matriz) is list:
         for i in matriz:
             for j in i:
-                if valInt(j) and valInt(j) or valFloat(j) and valFloat(j):
+                if valInt(j) and valFloat(j):
                     Comprobacion = True
                 else:
                     raise ValueError("Solo debe ingresar tipo de dato int o float")
