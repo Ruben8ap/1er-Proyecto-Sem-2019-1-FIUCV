@@ -34,12 +34,12 @@
   
     *Verificacion_1
     *Producto_Cruz
+    *Producto_Matricial
   
   **Digramas de flujo en construccion**:
   
     *Transpuesta_Matriz
     *Determinante_Matriz
-    *Producto_Matricial
     *crearUno
     *crearCero
     *Matriz_Inversa
