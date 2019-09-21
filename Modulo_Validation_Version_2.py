@@ -1,5 +1,27 @@
 def valInt(*args):
-    """Docstring"""
+    """Seccion de Ayuda para la Funcion valInt en el modulo Modulo_Validation:
+    
+    Descripcion de la Funcion valInt(argumento): 
+    
+        La funcion valInt tiene como objetivo, validar si el tipo de dato ingresado es un numero entero para el caso de introducir un 
+        solo argumento y en el caso de dos argumentos, valida si el mismo se encuentra en el intervalo ingresado.
+        
+    Funciones que se pueden utilizar:
+    
+    Caso 1: valInt(numero_entero)
+    
+        Salida Booleana "True" si el tipo del objeto es entero de lo contrario la salida Booleana sera "False".
+        
+    Caso 2: valInt(numero_entero, tupla)
+    
+        Salida Booleana "True" si el tipo de dato del primer argumento es entero y esta dentro del intervalo descrito por el 
+        segundo argumento (Sin incluir los numeros en los extremos).
+        
+    Caso 3: valInt(numero_entero, lista)
+    
+         Salida Booleana "True" si el tipo de dato del primer argumento es entero y esta dentro del intervalo
+         descrito por el segundo argumento (Incluyendo los numeros en los extremos)."""
+    
     if len(args)==1:
         if type(args[0]) is int:
             resultado = True
