@@ -4,11 +4,13 @@
 
 **Dpto. Investigación de Operaciones y Computación.**
 
-**Programación.**
+**Programación Seccion 07.**
 
 **Prof. Carlos E. González C.**
 
-**Avances del proyecto: FECHA DE ENTREGA 23/09/2019**
+**Primer Proyecto**
+
+**Integrantes: Ruben Hernandez C.I V-27450982 , Jeniffer Perez C.I V-25869825**
 
 **Modulos Finalizados**:
 
