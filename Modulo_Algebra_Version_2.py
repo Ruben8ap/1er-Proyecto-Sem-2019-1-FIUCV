@@ -7,9 +7,7 @@ def Verificacion_1(matriz):
 
     Funciones que se pueden utilizar:
 
-    Un solo argumento:
-
-    """
+    Un solo argumento: """
     if type(matriz) is list:
         for i in matriz:
             for j in i:
@@ -37,9 +35,7 @@ def Arreglo_Matricial(m):
 
     Funciones que se pueden utilizar:
 
-    Un solo argumento:
-
-    """
+    Un solo argumento:"""
     for i in range(0, len(m)): print(m[i])
     return ""
 
@@ -50,9 +46,7 @@ def Producto_Cruz(vector_1,vector_2):
 
     Funciones que se pueden utilizar:
 
-    Dos argumentos:
-
-    """
+    Dos argumentos:"""
     Resultado=[]
     Final=[]
     if Verificacion_1(vector_1) and Verificacion_1(vector_2) and len(vector_1[0])==3 and len(vector_2[0])==3:
@@ -76,9 +70,7 @@ def Transpuesta_Matriz(matriz):
 
     Funciones que se pueden utilizar:
 
-    Un solo argumento:
-
-    """
+    Un solo argumento: """
     if Verificacion_1(matriz):
         filas = len(matriz)
         columnas = len(matriz[0])
@@ -96,9 +88,7 @@ def Determinante_Matriz(matriz):
 
     Funciones que se pueden utilizar:
 
-    Un solo argumento:
-
-    """
+    Un solo argumento: """
     if Verificacion_1(matriz):
         n=len(matriz)
         if len(matriz)==len(matriz[0]):
@@ -123,9 +113,7 @@ def Producto_Matricial(A,B):
 
     Funciones que se pueden utilizar:
 
-    Dos argumentos:
-
-    """
+    Dos argumentos:  """
     if Verificacion_1(A) and Verificacion_1(B):
         fila_A = len(A)
         columna_A = len(A[0])
@@ -149,9 +137,7 @@ def crearUno(fila, pos):
 
     Funciones que se pueden utilizar:
 
-    Dos argumentos:
-
-    """
+    Dos argumentos: """
 	divisor = fila[pos] * 1.0
 	for e in range(0, len(fila)):
 		fila[e] = fila[e] / divisor
@@ -164,9 +150,7 @@ def crearCero(fila, filaPivote, pos):
 
     Funciones que se pueden utilizar:
 
-    Dos argumentos:
-
-    """
+    Dos argumentos:  """
 	multiplicador = -fila[pos] * 1.0
 	for e in range(0, len(fila)):
 		fila[e] = (filaPivote[e] * multiplicador) + fila[e]
@@ -179,9 +163,7 @@ def Matriz_Inversa(matriz):
 
     Funciones que se pueden utilizar:
 
-    Un solo argumento:
-
-    """
+    Un solo argumento: """
     if Determinante_Matriz(matriz)!=0:
         if Verificacion_1(matriz):
         	mIdentidad = [[0 for i in range(0, len(matriz))]
@@ -208,9 +190,7 @@ def Resolucion_Sistema_de_Ecuaciones(matriz_A,matriz_B):
 
     Funciones que se pueden utilizar:
 
-    Dos argumentos:
-
-    """
+    Dos argumentos: """
     if Verificacion_1(matriz_A) and Verificacion_1(matriz_B):
         print("\nEl resultado del sistema de ecuaciones es:\n")
         return Producto_Matricial(Matriz_Inversa(matriz_A),matriz_B)
