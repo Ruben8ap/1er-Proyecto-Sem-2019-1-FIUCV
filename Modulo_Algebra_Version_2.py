@@ -107,7 +107,7 @@ def Determinante_Matriz(matriz):
 #print("\nEl Determinante de la matriz es =",Determinante_Matriz([[1,0,0],[0,1,0],[0,0,1]]))
 
 def Producto_Matricial(A,B):
-    """Seccion de Ayuda para la Producto_Matricial en el modulo Modulo_Algebra:
+    """Seccion de Ayuda para la Funcion Producto_Matricial en el modulo Modulo_Algebra:
 
     Descripcion de la Funcion Producto_Matricial:
 
@@ -131,16 +131,30 @@ def Producto_Matricial(A,B):
 #print("\nResultado de la multiplicaión de matrices\n",Arreglo_Matricial(Producto_Matricial([[1,0,0],[0,0,0],[0,0,0]],[[1,0,0],[0,1,0],[0,0,1]])))
 
 def crearUno(fila, pos):
-	divisor = fila[pos] * 1.0
-	for e in range(0, len(fila)):
-		fila[e] = fila[e] / divisor
-	return fila
+    """Seccion de Ayuda para la Funcion crearUno en el modulo Modulo_Algebra:
+
+    Descripcion de la Funcion crearUno:
+
+    Funciones que se pueden utilizar:
+
+    Dos argumentos:  """
+    divisor=fila[pos] * 1.0
+    for e in range(0, len(fila)):
+        fila[e] = fila[e] / divisor
+    return fila
 
 def crearCero(fila, filaPivote, pos):
-	multiplicador = -fila[pos] * 1.0
-	for e in range(0, len(fila)):
-		fila[e] = (filaPivote[e] * multiplicador) + fila[e]
-	return fila
+    """Seccion de Ayuda para la Funcion crearCero en el modulo Modulo_Algebra:
+
+    Descripcion de la Funcion crearCero:
+
+    Funciones que se pueden utilizar:
+
+    Dos argumentos:  """
+    multiplicador = -fila[pos] * 1.0
+    for e in range(0, len(fila)):
+        fila[e] = (filaPivote[e] * multiplicador) + fila[e]
+    return fila
 
 def Matriz_Inversa(matriz):
     """Seccion de Ayuda para la Funcion Matriz_Inversa en el modulo Modulo_Algebra:
