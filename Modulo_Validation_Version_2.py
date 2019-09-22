@@ -13,27 +13,28 @@ def valInt(*args):
 
         Caso 1: valInt(argumento)
 
-            Salida Booleana "True" si el tipo de dato ingresado es int, de lo contrario la salida Booleana sera "False".
+            Retorna el valor Booleano "True" si el tipo de dato ingresado es int, de lo contrario retorna el valor Booleano "False".
 
     Dos argumentos:
 
         Caso 1: valInt(argumento, tuple)
 
-            Salida Booleana "True" si el tipo de dato del primer argumento es int y esta dentro del intervalo descrito por el
-            segundo argumento, (Sin incluir los numeros en los extremos), de lo contrario la salida Booleana sera "False".
+            Retorna el valor Booleano "True" si el tipo de dato del primer argumento es int y esta dentro del intervalo descrito por el
+            segundo argumento, (Sin incluir los numeros en los extremos), de lo contrario retorna el valor Booleano "False".
 
         Caso 2: valInt(argumento, list)
 
-             Salida Booleana "True" si el tipo de dato del primer argumento es int y esta dentro del intervalo descrito por el
-             segundo argumento, (Incluyendo los numeros en los extremos), de lo contrario la salida Booleana se "False".
+             Retorna el valor Booleano "True" si el tipo de dato del primer argumento es int y esta dentro del intervalo descrito por el
+             segundo argumento, (Incluyendo los numeros en los extremos), de lo contrario retorna el valor Booleano "False".
 
         Caso 3: valInt(argumento,list o tuple)
 
-            Salida "TypeError" si el segundo argumento recibe un tipo de dato distinto a lista o tupla.
+            Salida "TypeError" si el segundo argumento recibe un tipo de dato distinto a list o tuple.
 
         Caso 4: valInt(argumento,list o tuple)
 
-         Salida "ValueError" si el segundo argumento recibe una list o tuple organizada de manera decreciente o con una dimension incongruente."""
+            Salida "ValueError" si el segundo argumento recibe una list o tuple organizada de manera decreciente o con una 
+            dimension incongruente."""
 
     if len(args)==1:
         if type(args[0]) is int:
@@ -68,19 +69,19 @@ def valFloat(*args):
 
         Caso 1: valFloat(argumento)
 
-            Salida Booleana "True" si el tipo de dato ingresado es float, de lo contrario la salida Booleana sera "False".
+             Retorna el valor Booleano "True" si el tipo de dato ingresado es float, de lo contrario retorna el valor Booleano "False".
 
     Dos argumentos:
 
         Caso 1: valFloat(argumento, tuple)
 
-            Salida Booleana "True" si el tipo de dato del primer argumento es float y esta dentro del intervalo descrito por el
-            segundo argumento, (Sin incluir los numeros en los extremos), de lo contrario la salida Booleana sera "False".
+             Retorna el valor Booleano "True" si el tipo de dato del primer argumento es float y esta dentro del intervalo descrito 
+             por el segundo argumento, (Sin incluir los numeros en los extremos), de lo contrario retorna el valor Booleano "False".
 
         Caso 2: valFloat(argumento, list)
 
-             Salida Booleana "True" si el tipo de dato del primer argumento es float y esta dentro del intervalo descrito por el
-             segundo argumento, (Incluyendo los numeros en los extremos), de lo contrario la salida Booleana se "False".
+             Retorna el valor Booleano "True" si el tipo de dato del primer argumento es float y esta dentro del intervalo descrito 
+             por el segundo argumento, (Incluyendo los numeros en los extremos), de lo contrario retorna el valor Booleano "False".
 
         Caso 3: valFloat(argumento,list o tuple)
 
@@ -88,7 +89,8 @@ def valFloat(*args):
 
         Caso 4: valFloat(argumento,list o tuple)
 
-         Salida "ValueError" si el segundo argumento recibe una list o tuple organizada de manera decreciente o con una dimension incongruente."""
+            Salida "ValueError" si el segundo argumento recibe una list o tuple organizada de manera decreciente o con una 
+            dimension incongruente."""
 
     if len(args)==1:
         if type(args[0]) is float:
@@ -121,18 +123,18 @@ def valComplex(*args):
 
         Caso 1: valComplex(argumento)
 
-            Salida Booleana "True" si el tipo de dato ingresado es complex, de lo contrario la salida Booleana sera "False".
+             Retorna el valor Booleano "True" si el tipo de dato ingresado es complex, de lo contrario retorna el valor Booleano "False".
 
     Dos argumentos:
 
         Caso 1: valComplex(argumento, tuple)
 
-            Salida Booleana "True" si el tipo de dato del primer argumento es complex y esta dentro del intervalo descrito por el
-            segundo argumento, (Sin incluir los numeros en los extremos), de lo contrario la salida Booleana sera "False".
+            Retorna el valor Booleano "True" si el tipo de dato del primer argumento es complex y esta dentro del intervalo descrito por el
+            segundo argumento, (Sin incluir los numeros en los extremos), de lo contrario retorna el valor Booleano "False".
 
         Caso 2: valComplex(argumento, list)
 
-             Salida Booleana "True" si el tipo de dato del primer argumento es complex y esta dentro del intervalo descrito por el
+             Retorna el valor Booleano "True" si el tipo de dato del primer argumento es complex y esta dentro del intervalo descrito por el
              segundo argumento, (Incluyendo los numeros en los extremos), de lo contrario la salida Booleana se "False".
 
         Caso 3: valComplex(argumento,list o tuple)
@@ -141,7 +143,8 @@ def valComplex(*args):
 
         Caso 4: valComplex(argumento,list o tuple)
 
-         Salida "ValueError" si el segundo argumento recibe una list o tuple organizada de manera decreciente o con una dimension incongruente."""
+             Salida "ValueError" si el segundo argumento recibe una list o tuple organizada de manera decreciente o con una 
+             dimension incongruente."""
 
     if len(args)==1:
         if type(args[0]) is complex:
@@ -174,19 +177,20 @@ def valList(*args):
 
         Caso 1: valList(argumento)
 
-            Salida Booleana "True" si el tipo de dato ingresado es list, de lo contrario la salida Booleana sera "False".
+             Retorna el valor Booleano "True" si el tipo de dato ingresado es list, de lo contrario retorna el valor Booleano "False".
 
     Tres argumentos:
 
         Caso 1: valList(argumento,argumento,"value")
 
-            Salida Booleana "True" si el primer y segundo argumento son iguales, y a su vez son del tipo de dato list, de lo contrario la salida
-            Booleana  sera "False". En el caso del tercer argumento este debe ser igual a "value".
+            Retorna el valor Booleano "True" si el primer y segundo argumento son iguales, y a su vez son del tipo de dato list, 
+            de lo contrario retorna el valor Booleano "False". En el caso del tercer argumento este debe ser igual a "value".
 
         Caso 2: valList(argumento,argumento,"len")
 
-             Salida Booleana "True" si el tipo de dato del primer argumento es list y su longitud coincide con el segundo argumento,
-             de lo contrario la salida Booleana se "False". En el caso del tercer argumento este debe ser igual a "len".
+             Retorna el valor Booleano "True" si el tipo de dato del primer argumento es list y su longitud coincide con el 
+             segundo argumento, de lo contrario retorna el valor Booleano "False". En el caso del tercer argumento 
+             este debe ser igual a "len".
 
         Caso 3: valList(argumento,argumento,float)
 
