@@ -1,6 +1,15 @@
 from Modulo_Validation_Version_2 import valList,valInt,valFloat,valComplex
 
 def Verificacion_1(matriz):
+    """Seccion de Ayuda para la Funcion Verificacion_1 en el modulo Modulo_Algebra:
+
+    Descripcion de la Funcion Verificacion_1:
+
+    Funciones que se pueden utilizar:
+
+    Un solo argumento:
+
+    """
     if type(matriz) is list:
         for i in matriz:
             for j in i:
@@ -22,10 +31,28 @@ def Verificacion_1(matriz):
 #print(Verificacion_1([[4,2,4],[4,5,8],[6,8,4.8]]))
 
 def Arreglo_Matricial(m):
+    """Seccion de Ayuda para la Funcion Arreglo_Matricial en el modulo Modulo_Algebra:
+
+    Descripcion de la Arreglo_Matricial:
+
+    Funciones que se pueden utilizar:
+
+    Un solo argumento:
+
+    """
     for i in range(0, len(m)): print(m[i])
     return ""
 
 def Producto_Cruz(vector_1,vector_2):
+    """Seccion de Ayuda para la Funcion Producto_Cruz en el modulo Modulo_Algebra:
+
+    Descripcion de la Funcion Producto_Cruz:
+
+    Funciones que se pueden utilizar:
+
+    Dos argumentos:
+
+    """
     Resultado=[]
     Final=[]
     if Verificacion_1(vector_1) and Verificacion_1(vector_2) and len(vector_1[0])==3 and len(vector_2[0])==3:
@@ -43,6 +70,15 @@ def Producto_Cruz(vector_1,vector_2):
 #print(Producto_Cruz([[4,3,4]] ,[[4,3,8]]))
 
 def Transpuesta_Matriz(matriz):
+    """Seccion de Ayuda para la Funcion Transpuesta_Matriz en el modulo Modulo_Algebra:
+
+    Descripcion de la Funcion Transpuesta_Matriz:
+
+    Funciones que se pueden utilizar:
+
+    Un solo argumento:
+
+    """
     if Verificacion_1(matriz):
         filas = len(matriz)
         columnas = len(matriz[0])
@@ -54,6 +90,15 @@ def Transpuesta_Matriz(matriz):
 #print(Arreglo_Matricial(Transpuesta_Matriz([[4,3,4],[2,3,4]])))
 
 def Determinante_Matriz(matriz):
+    """Seccion de Ayuda para la Determinante_Matriz en el modulo Modulo_Algebra:
+
+    Descripcion de la Funcion Determinante_Matriz:
+
+    Funciones que se pueden utilizar:
+
+    Un solo argumento:
+
+    """
     if Verificacion_1(matriz):
         n=len(matriz)
         if len(matriz)==len(matriz[0]):
@@ -72,6 +117,15 @@ def Determinante_Matriz(matriz):
 #print("\nEl Determinante de la matriz es =",Determinante_Matriz([[1,0,0],[0,1,0],[0,0,1]]))
 
 def Producto_Matricial(A,B):
+    """Seccion de Ayuda para la Producto_Matricial en el modulo Modulo_Algebra:
+
+    Descripcion de la Funcion Producto_Matricial:
+
+    Funciones que se pueden utilizar:
+
+    Dos argumentos:
+
+    """
     if Verificacion_1(A) and Verificacion_1(B):
         fila_A = len(A)
         columna_A = len(A[0])
@@ -89,18 +143,45 @@ def Producto_Matricial(A,B):
 #print("\nResultado de la multiplicaión de matrices\n",Arreglo_Matricial(Producto_Matricial([[1,0,0],[0,0,0],[0,0,0]],[[1,0,0],[0,1,0],[0,0,1]])))
 
 def crearUno(fila, pos):
+    """Seccion de Ayuda para la Funcion crearUno en el modulo Modulo_Algebra:
+
+    Descripcion de la Funcion crearUno:
+
+    Funciones que se pueden utilizar:
+
+    Dos argumentos:
+
+    """
 	divisor = fila[pos] * 1.0
 	for e in range(0, len(fila)):
 		fila[e] = fila[e] / divisor
 	return fila
 
 def crearCero(fila, filaPivote, pos):
+    """Seccion de Ayuda para la Funcion crearCero en el modulo Modulo_Algebra:
+
+    Descripcion de la Funcion crearCero:
+
+    Funciones que se pueden utilizar:
+
+    Dos argumentos:
+
+    """
 	multiplicador = -fila[pos] * 1.0
 	for e in range(0, len(fila)):
 		fila[e] = (filaPivote[e] * multiplicador) + fila[e]
 	return fila
 
 def Matriz_Inversa(matriz):
+    """Seccion de Ayuda para la Funcion Matriz_Inversa en el modulo Modulo_Algebra:
+
+    Descripcion de la Funcion Matriz_Inversa:
+
+    Funciones que se pueden utilizar:
+
+    Un solo argumento:
+
+    """
     if Determinante_Matriz(matriz)!=0:
         if Verificacion_1(matriz):
         	mIdentidad = [[0 for i in range(0, len(matriz))]
@@ -121,6 +202,15 @@ def Matriz_Inversa(matriz):
 #print("\nMatriz Inversa",Arreglo_Matricial(Matriz_Inversa([[1,0,0],[0,1,0],[0,0,1]])))
 
 def Resolucion_Sistema_de_Ecuaciones(matriz_A,matriz_B):
+    """Seccion de Ayuda para la Funcion Resolucion_Sistema_de_Ecuaciones en el modulo Modulo_Algebra:
+
+    Descripcion de la Funcion Resolucion_Sistema_de_Ecuaciones:
+
+    Funciones que se pueden utilizar:
+
+    Dos argumentos:
+
+    """
     if Verificacion_1(matriz_A) and Verificacion_1(matriz_B):
         print("\nEl resultado del sistema de ecuaciones es:\n")
         return Producto_Matricial(Matriz_Inversa(matriz_A),matriz_B)
