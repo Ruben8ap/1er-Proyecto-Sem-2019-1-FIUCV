@@ -12,6 +12,8 @@
 
 **Integrantes: Rubén Hernández C.I V-27.450.982 , Jeniffer Pérez C.I V-25.869.825**
 
+**Estatus del Proyecto ---> Finalizado**
+
 **Modulos Finalizados**:
 
   Modulo_Validation:
