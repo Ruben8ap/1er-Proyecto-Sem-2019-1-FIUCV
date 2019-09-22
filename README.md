@@ -1,11 +1,8 @@
-# 1er-Proyecto-Sem-2019-1-FIUCV
-
-                                                    Universidad Central de Venezuela.
-                                                    Facultad de Ingeniería.
-                                                    Dpto. Investigación de Operaciones y Computación.
-                                                    Programación.
-                                                    Prof. Carlos E. González C.
-
+Universidad Central de Venezuela.
+Facultad de Ingeniería.
+Dpto. Investigación de Operaciones y Computación.
+Programación.
+Prof. Carlos E. González C.
 **Avances del proyecto: FECHA DE ENTREGA 23/09/2019**
 
 **Modulos Finalizados**:
