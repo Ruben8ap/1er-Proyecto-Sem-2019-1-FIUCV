@@ -2,7 +2,7 @@
 
 **Avances del proyecto: SE DEBE FINALIZAR EL 22/09/2019 , FECHA DE ENTREGA 23/09/2019**
 
-**Modulos Completados a falta de DocString,Revisiones Finales y detalles diminutos de funcionamieto**:
+**Modulos Completados a falta de revisiones finales**:
 
   Módulo Validation:
 
@@ -14,25 +14,27 @@
   Módulo Algebra:
   
     *Verificacion_1
+    *Arreglo_Matricial (falta DocString)
     *Producto_Cruz
     *Transpuesta_Matriz
     *Determinante_Matriz
     *Producto_Matricial
-    *crearUno
-    *crearCero
+    *crearUno (falta DocString)
+    *crearCero (falta DocString)
     *Matriz_Inversa
     *Resolucion_Sistema_de_Ecuaciones
     
   Módulo Crypto:
 
-    *Codificar
-    *Descodificar
+    *Codificar 
+    *Descodificar 
 
 **Digramas de flujo completados, Revisiones Finales y cambios minimos**:
 
   Modulo Algebra:
   
     *Verificacion_1
+    *Arreglo_Matricial
     *Producto_Cruz
     *Producto_Matricial
     *Transpuesta_Matriz
