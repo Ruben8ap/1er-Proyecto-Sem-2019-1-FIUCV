@@ -4,14 +4,14 @@
 
 **Modulos Finalizados**:
 
-  Módulo Validation:
+  Modulo_Validation:
 
     *valInt
     *valFloat
     *valComplex
     *valList
     
-  Módulo Algebra:
+  Modulo_Algebra:
   
     *Verificacion_1
     *Arreglo_Matricial 
@@ -24,14 +24,14 @@
     *Matriz_Inversa
     *Resolucion_Sistema_de_Ecuaciones
     
-  Módulo Crypto:
+  Modulo_Crypto:
 
     *Codificar 
     *Descodificar 
 
 **Digramas de flujo Finalizados**:
 
-  Modulo Algebra:
+  Modulo_Algebra:
   
     *Verificacion_1
     *Arreglo_Matricial
