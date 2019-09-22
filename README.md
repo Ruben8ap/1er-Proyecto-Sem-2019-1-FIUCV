@@ -10,7 +10,7 @@
 
 **Primer Proyecto**
 
-**Integrantes: Ruben Hernandez C.I V-27450982 , Jeniffer Perez C.I V-25869825**
+**Integrantes: Rubén Hernández C.I V-27.450.982 , Jeniffer Pérez C.I V-25.869.825**
 
 **Modulos Finalizados**:
 
