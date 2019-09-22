@@ -1,4 +1,4 @@
-from Modulo_Validation_Version_2 import valList,valInt,valFloat,valComplex
+from Modulo_Validation import valList,valInt,valFloat,valComplex
 
 def Verificacion_1(matriz):
     """Seccion de Ayuda para la Funcion Verificacion_1 en el modulo Modulo_Algebra:
@@ -68,9 +68,7 @@ def Arreglo_Matricial(m):
 
     Descripcion de la Arreglo_Matricial:
 
-    Funciones que se pueden utilizar:
-
-    Un solo argumento:"""
+        El objetivo de la función Arreglo_Matricial es proporcionar un arreglo fila por fila de la matriz ingresada por el usuario"""
     for i in range(0, len(m)): print(m[i])
     return ""
 
@@ -230,9 +228,17 @@ def crearUno(fila, pos):
 
     Descripcion de la Funcion crearUno:
 
-    Funciones que se pueden utilizar:
+        El objetivo de la función crearUno es introducir "unos" en la diagonal principal de la matriz proporcionada
+        por el usuario en la función de Matriz_Inversa a traves de operaciones algebraicas.
 
-    Dos argumentos:  """
+    Funcionamiento de la funcion crearUno:
+
+    Dos argumentos:
+
+        Caso 1: crearUno(fila,pos)
+
+        Si la función de la Matriz_Inversa(matriz) es aprobada por la función Determinante_Matriz y Verificacion_1, entonces
+        la función retornara las filas modificadas para el método de Gauss Jordan"""
     divisor=fila[pos] * 1.0
     for e in range(0, len(fila)):
         fila[e] = fila[e] / divisor
@@ -243,9 +249,17 @@ def crearCero(fila, filaPivote, pos):
 
     Descripcion de la Funcion crearCero:
 
-    Funciones que se pueden utilizar:
+        El objetivo de la función crearCero, es introducir "ceros" arriba y debajo de los "unos" usados como pivotes en
+        las filas de la matriz proporcionada por el usuario en la función Matriz_Inversa a traves de operaciones algebraicas
 
-    Dos argumentos:  """
+    Funcionamiento de la funcion crearCero:
+
+    Tres argumentos:
+
+        Caso 1: crearCero(fila, filaPivote, pos)
+
+            Si la función de la Matriz_Inversa(matriz) es aprobada por la función Determinante_Matriz y Verificacion_1, entonces
+            la función retornara las filas modificadas para el método de Gauss Jordan"""
     multiplicador = -fila[pos] * 1.0
     for e in range(0, len(fila)):
         fila[e] = (filaPivote[e] * multiplicador) + fila[e]
