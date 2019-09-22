@@ -8,7 +8,7 @@ def Verificacion_1(matriz):
         El objetivo de la funcion Verificacion_1 es validar los tipos de datos ingresados como datos, asi como la verifiacion de
         que el argumento introducido tenga dimensiones congruentes en el ambito matematico.
 
-    Funciones que se pueden utilizar:
+    Funcionamiento de la funcion Verificacion_1:
 
     Un solo argumento:
 
@@ -82,7 +82,7 @@ def Producto_Cruz(vector_1,vector_2):
         El objetivo de la funcion Producto_Cruz, es proporcionar el resultado de la operacion matematica Producto Vectorial, aplicada
         a vector_1 y a vector_2.
 
-    Funciones que se pueden utilizar:
+    Funcionamiento de la funcion Producto_Cruz:
 
     Dos argumentos:
 
@@ -118,7 +118,7 @@ def Transpuesta_Matriz(matriz):
 
         El objetivo de la funcion Transpuesta_Matriz, es proporcionar al usuario la matriz transpuesta del argumento matriz.
 
-    Funciones que se pueden utilizar:
+    Funcionamiento de la funcion Transpuesta_Matriz:
 
     Un solo argumento:
 
@@ -148,7 +148,7 @@ def Determinante_Matriz(matriz):
 
         El objetivo de la funcion Determinante_Matriz es mostrar el determinante del argumento matriz.
 
-    Funciones que se pueden utilizar:
+    Funcionamiento de la funcion Determinante_Matriz:
 
     Un solo argumento:
 
@@ -190,7 +190,7 @@ def Producto_Matricial(A,B):
 
         El objetivo de la funcion Producto_Matricial, es proporcionar el resutado de la multiplicacion de matrices entre A y B.
 
-    Funciones que se pueden utilizar:
+    Funcionamiento de la funcion Producto_Matricial:
 
     Dos argumentos:
 
@@ -258,7 +258,7 @@ def Matriz_Inversa(matriz):
 
         El ojetivo de la funcion Matriz_Inversa, es proporcionar al usuario la matriz inversa del argumento matriz.
 
-    Funciones que se pueden utilizar:
+    Funcionamiento de la funcion Matriz_Inversa:
 
     Un solo argumento:
 
@@ -302,7 +302,7 @@ def Resolucion_Sistema_de_Ecuaciones(matriz_A,matriz_B):
         El objetivo de la funcion Resolucion_Sistema_de_Ecuaciones, es dar el resultado del sistema ecuaciones ingresado
         en forma matricial, es decir matriz_A y matriz_B.
 
-    Funciones que se pueden utilizar:
+    Funcionamiento de la funcion Resolucion_Sistema_de_Ecuaciones:
 
     Dos argumentos:
 
