@@ -2,7 +2,7 @@
 
 **Avances del proyecto: SE DEBE FINALIZAR EL 22/09/2019 , FECHA DE ENTREGA 23/09/2019**
 
-**Modulos Completados a falta de revisiones finales**:
+**Modulos Finalizados**:
 
   Módulo Validation:
 
@@ -29,7 +29,7 @@
     *Codificar 
     *Descodificar 
 
-**Digramas de flujo completados, Revisiones Finales y cambios minimos**:
+**Digramas de flujo Finalizados**:
 
   Modulo Algebra:
   
