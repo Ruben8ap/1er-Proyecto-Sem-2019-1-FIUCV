@@ -131,26 +131,12 @@ def Producto_Matricial(A,B):
 #print("\nResultado de la multiplicaión de matrices\n",Arreglo_Matricial(Producto_Matricial([[1,0,0],[0,0,0],[0,0,0]],[[1,0,0],[0,1,0],[0,0,1]])))
 
 def crearUno(fila, pos):
-    """Seccion de Ayuda para la Funcion crearUno en el modulo Modulo_Algebra:
-
-    Descripcion de la Funcion crearUno:
-
-    Funciones que se pueden utilizar:
-
-    Dos argumentos: """
 	divisor = fila[pos] * 1.0
 	for e in range(0, len(fila)):
 		fila[e] = fila[e] / divisor
 	return fila
 
 def crearCero(fila, filaPivote, pos):
-    """Seccion de Ayuda para la Funcion crearCero en el modulo Modulo_Algebra:
-
-    Descripcion de la Funcion crearCero:
-
-    Funciones que se pueden utilizar:
-
-    Dos argumentos:  """
 	multiplicador = -fila[pos] * 1.0
 	for e in range(0, len(fila)):
 		fila[e] = (filaPivote[e] * multiplicador) + fila[e]
