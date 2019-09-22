@@ -1,6 +1,6 @@
 # 1er-Proyecto-Sem-2019-1-FIUCV
 
-**Avances del proyecto: SE DEBE FINALIZAR ANTES DEL 22/10/2019 , FECHA DE ENTREGA 24/10/2019**
+**Avances del proyecto: SE DEBE FINALIZAR EL 22/09/2019 , FECHA DE ENTREGA 23/09/2019**
 
 **Modulos Completados a falta de DocString,Revisiones Finales y detalles diminutos de funcionamieto**:
 
