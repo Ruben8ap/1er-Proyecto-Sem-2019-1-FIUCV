@@ -19,8 +19,8 @@
     *Transpuesta_Matriz
     *Determinante_Matriz
     *Producto_Matricial
-    **crearUno (falta DocString)
-    **crearCero (falta DocString)
+    *crearUno (falta DocString)
+    *crearCero (falta DocString)
     *Matriz_Inversa
     *Resolucion_Sistema_de_Ecuaciones
     
