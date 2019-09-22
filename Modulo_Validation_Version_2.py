@@ -7,7 +7,7 @@ def valInt(*args):
         solo argumento y en el caso de dos argumentos, valida si el mismo se encuentra en el intervalo ingresado. Para el caso de un
         argumento la funcion solo acepta tipo de dato "int" y para el caso de dos argumento solo aceptara los de tipos de datos "list o tuple".
 
-    Funciones que se pueden utilizar:
+    Funcionamiento de la funcion valInt:
 
     Un solo Argumento:
 
@@ -33,7 +33,7 @@ def valInt(*args):
 
         Caso 4: valInt(argumento,list o tuple)
 
-            Salida "ValueError" si el segundo argumento recibe una list o tuple organizada de manera decreciente o con una 
+            Salida "ValueError" si el segundo argumento recibe una list o tuple organizada de manera decreciente o con una
             dimension incongruente."""
 
     if len(args)==1:
@@ -53,7 +53,7 @@ def valInt(*args):
     else:
         raise ValueError("Esta funcion solo acepta 1 o 2 argumentos y usted ingreso: {}".format(len(args)))
     return resultado
-
+#print(valInt(4))
 def valFloat(*args):
     """Seccion de Ayuda para la Funcion valFloat en el modulo Modulo_Validation:
 
@@ -63,7 +63,7 @@ def valFloat(*args):
         solo argumento y en el caso de dos argumentos, valida si el mismo se encuentra en el intervalo ingresado. Para el caso de un solo
         argumento la funcion solo acepta tipo de dato "float" y para el caso de dos argumento solo aceptara los de tipos de datos "list o tuple".
 
-    Funciones que se pueden utilizar:
+    Funcionamiento de la funcion valFloat:
 
     Un solo Argumento:
 
@@ -75,12 +75,12 @@ def valFloat(*args):
 
         Caso 1: valFloat(argumento, tuple)
 
-             Retorna el valor Booleano "True" si el tipo de dato del primer argumento es float y esta dentro del intervalo descrito 
+             Retorna el valor Booleano "True" si el tipo de dato del primer argumento es float y esta dentro del intervalo descrito
              por el segundo argumento, (Sin incluir los numeros en los extremos), de lo contrario retorna el valor Booleano "False".
 
         Caso 2: valFloat(argumento, list)
 
-             Retorna el valor Booleano "True" si el tipo de dato del primer argumento es float y esta dentro del intervalo descrito 
+             Retorna el valor Booleano "True" si el tipo de dato del primer argumento es float y esta dentro del intervalo descrito
              por el segundo argumento, (Incluyendo los numeros en los extremos), de lo contrario retorna el valor Booleano "False".
 
         Caso 3: valFloat(argumento,list o tuple)
@@ -89,7 +89,7 @@ def valFloat(*args):
 
         Caso 4: valFloat(argumento,list o tuple)
 
-            Salida "ValueError" si el segundo argumento recibe una list o tuple organizada de manera decreciente o con una 
+            Salida "ValueError" si el segundo argumento recibe una list o tuple organizada de manera decreciente o con una
             dimension incongruente."""
 
     if len(args)==1:
@@ -107,7 +107,7 @@ def valFloat(*args):
         else:
             resultado = False
     return resultado
-
+#print(valFloat(4.5))
 def valComplex(*args):
     """Seccion de Ayuda para la Funcion valComplex en el modulo Modulo_Validation:
 
@@ -117,7 +117,7 @@ def valComplex(*args):
         solo argumento y en el caso de dos argumentos, valida si el mismo se encuentra en el intervalo ingresado. Para el caso de un solo
         argumento la funcion solo acepta tipo de dato "complex" y para el caso de dos argumento solo aceptara los de tipos de datos "list o tuple".
 
-    Funciones que se pueden utilizar:
+    Funcionamiento de la funcion valComplex:
 
     Un solo Argumento:
 
@@ -143,7 +143,7 @@ def valComplex(*args):
 
         Caso 4: valComplex(argumento,list o tuple)
 
-             Salida "ValueError" si el segundo argumento recibe una list o tuple organizada de manera decreciente o con una 
+             Salida "ValueError" si el segundo argumento recibe una list o tuple organizada de manera decreciente o con una
              dimension incongruente."""
 
     if len(args)==1:
@@ -161,6 +161,7 @@ def valComplex(*args):
         else:
             resultado = False
     return resultado
+#print(valComplex(4j+5))
 def valList(*args):
     """Seccion de Ayuda para la Funcion valList en el modulo Modulo_Validation:
 
@@ -171,7 +172,7 @@ def valList(*args):
         tercer argumento sea igual a "value" y si el tercer argumento es "len" el mismo validara que la longitud del primer argumento
         coincida con el numero introducido en el segundo argumento.
 
-    Funciones que se pueden utilizar:
+    Funcionamiento de la funcion valList:
 
     Un solo Argumento:
 
@@ -183,13 +184,13 @@ def valList(*args):
 
         Caso 1: valList(argumento,argumento,"value")
 
-            Retorna el valor Booleano "True" si el primer y segundo argumento son iguales, y a su vez son del tipo de dato list, 
+            Retorna el valor Booleano "True" si el primer y segundo argumento son iguales, y a su vez son del tipo de dato list,
             de lo contrario retorna el valor Booleano "False". En el caso del tercer argumento este debe ser igual a "value".
 
         Caso 2: valList(argumento,argumento,"len")
 
-             Retorna el valor Booleano "True" si el tipo de dato del primer argumento es list y su longitud coincide con el 
-             segundo argumento, de lo contrario retorna el valor Booleano "False". En el caso del tercer argumento 
+             Retorna el valor Booleano "True" si el tipo de dato del primer argumento es list y su longitud coincide con el
+             segundo argumento, de lo contrario retorna el valor Booleano "False". En el caso del tercer argumento
              este debe ser igual a "len".
 
         Caso 3: valList(argumento,argumento,float)
@@ -225,3 +226,4 @@ def valList(*args):
         elif args[2]!=("value" and "value"):
             raise ValueError("El tercer argumento solo permite como entrada (value o len) y usted introdujo: {}".format(args[2]))
     return resultado
+#print(valList([4,9]))
