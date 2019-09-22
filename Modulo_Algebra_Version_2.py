@@ -5,9 +5,44 @@ def Verificacion_1(matriz):
 
     Descripcion de la Funcion Verificacion_1:
 
+        El objetivo de la funcion Verificacion_1 es validar los tipos de datos ingresados como datos, asi como la verifiacion de
+        que el argumento introducido tenga dimensiones congruentes en el ambito matematico.
+
     Funciones que se pueden utilizar:
 
-    Un solo argumento: """
+    Un solo argumento:
+
+        Caso 1: Verificacion_1(matriz)
+
+            Caracteristicas principales de matriz:
+
+                *Tipo de dato list
+                *Igual longitud entre todas las listas ingresadas.
+                *Los elementos de cada una de las listas ingresadas son de tipo "int" o "float".
+
+                La funcion retornara el valor Booleano "True" asignada a la variable Comprobacion.
+
+        Caso 2: Verificacion_1(matriz)
+
+            Caracteristicas principales de matriz:
+
+                *Los elementos de cada una de las listas ingresadas son distintas a los tipos
+                 de datos "int" o "float".
+
+                 La funcion tendra como salida un ValueError.
+
+        Caso 3: Verificacion_1(matriz)
+
+            Caracteristicas principales de matriz:
+
+                *Los elementos de cada una de las listas ingresadas son de tipo "int" o "float"
+                *Distintas longitudes entre todas las listas ingresadas.
+
+                La funcion tendra como salida un ValueError.
+
+        Caso 4: Verificacion_1(matriz)
+
+            Si matriz es de tipo lista, la funcion tendra como salida un TypeError."""
     if type(matriz) is list:
         for i in matriz:
             for j in i:
@@ -44,9 +79,22 @@ def Producto_Cruz(vector_1,vector_2):
 
     Descripcion de la Funcion Producto_Cruz:
 
+        El objetivo de la funcion Producto_Cruz, es proporcionar el resultado de la operacion matematica Producto Vectorial, aplicada
+        a vector_1 y a vector_2.
+
     Funciones que se pueden utilizar:
 
-    Dos argumentos:"""
+    Dos argumentos:
+
+        Caso 1: Producto_Cruz(vector_1,vector_2)
+
+            Si vector_1 y vector_2 son aprobadas por la funcion Verificacion_1 y la longitud de las mismos son igual 3
+            entonces se retornara la variable Final (resultado matematico del producto cruz).
+
+        Caso 2: Producto_Cruz(vector_1,vector_2)
+
+            Si vector_1 y vector_2 no son aprobadas por la funcion Verificacion_1 o la longitud de las mismas son distintas a 3
+            entonces se tendra como salida un ValueError."""
     Resultado=[]
     Final=[]
     if Verificacion_1(vector_1) and Verificacion_1(vector_2) and len(vector_1[0])==3 and len(vector_2[0])==3:
@@ -68,9 +116,21 @@ def Transpuesta_Matriz(matriz):
 
     Descripcion de la Funcion Transpuesta_Matriz:
 
+        El objetivo de la funcion Transpuesta_Matriz, es proporcionar al usuario la matriz transpuesta del argumento matriz.
+
     Funciones que se pueden utilizar:
 
-    Un solo argumento: """
+    Un solo argumento:
+
+        Caso 1: Transpuesta_Matriz(matriz)
+
+            Si matriz es aprobada por la funcion Verificacion_1, entonces la funcion retornara la variable Transposicion
+            (resultado matematico de la matriz transpuesta).
+
+        Caso 2: Transpuesta_Matriz(matriz)
+
+            Si matriz no es aprobada por la funcion Verificacion_1, entonces la funcion retornara el caso correspondiente
+            segun los lineamientos de la misma."""
     if Verificacion_1(matriz):
         filas = len(matriz)
         columnas = len(matriz[0])
@@ -86,9 +146,26 @@ def Determinante_Matriz(matriz):
 
     Descripcion de la Funcion Determinante_Matriz:
 
+        El objetivo de la funcion Determinante_Matriz es mostrar el determinante del argumento matriz.
+
     Funciones que se pueden utilizar:
 
-    Un solo argumento: """
+    Un solo argumento:
+
+        Caso 1: Determinante_Matriz(matriz)
+
+            Si matriz es aprobada por la funcion Verificacion_1 y la longitud de matriz es igual a la longitud  del primer elemento
+            de matriz, entonces la funcion retornara a deter (resultado, determinante de la matriz)
+
+        Caso 2: Determinante_Matriz(matriz)
+
+            Si matriz es aprobada por la funcion Verificacion_1 pero la longitud de matriz es distinta a la longitud  del primer elemento
+            de matriz, entonces la funcion tendra como salida un ValueError.
+
+        Caso 3: Determinante_Matriz(matriz)
+
+            Si matriz no es aprobada por la funcion Verificacion_1, la misma retornara el caso correspondiente a los lineamientos
+            de la misma."""
     if Verificacion_1(matriz):
         n=len(matriz)
         if len(matriz)==len(matriz[0]):
@@ -111,9 +188,27 @@ def Producto_Matricial(A,B):
 
     Descripcion de la Funcion Producto_Matricial:
 
+        El objetivo de la funcion Producto_Matricial, es proporcionar el resutado de la multiplicacion de matrices entre A y B.
+
     Funciones que se pueden utilizar:
 
-    Dos argumentos:  """
+    Dos argumentos:
+
+        Caso 1: Producto_Matricial(A,B)
+
+            Si A y B son aprobadas por la funcion Verificacion_1, y las columnas de A son igual a las filas de B, entonces
+            la funcion retornara la variable C , la cual es el resultado de la multiplicacion matricial.
+
+        Caso 2: Producto_Matricial(A,B)
+
+            Si A y B son aprobadas por la funcion Verificacion_1, pero las columnas de A son distintas a las filas de B,
+            entonces la funcion retornata la variable Mensaje.
+
+        Caso 3: Producto_Matricial(A,B)
+
+            Si A y B no son aprobadas por la funcion Verificacion_1,la misma retornara el caso correspondiente a los lineamientos
+            de la misma.
+            """
     if Verificacion_1(A) and Verificacion_1(B):
         fila_A = len(A)
         columna_A = len(A[0])
@@ -161,9 +256,25 @@ def Matriz_Inversa(matriz):
 
     Descripcion de la Funcion Matriz_Inversa:
 
+        El ojetivo de la funcion Matriz_Inversa, es proporcionar al usuario la matriz inversa del argumento matriz.
+
     Funciones que se pueden utilizar:
 
-    Un solo argumento: """
+    Un solo argumento:
+
+        Caso 1: Matriz_Inversa(matriz)
+
+            Si la funcion Determinante_Matriz y la funcion Verificacion_1 aprueban a matriz, entonces la funcion retornara
+            a matriz (matriz inversa).
+
+        Caso 2: Matriz_Inversa(matriz)
+
+            Si la funcion Determinante_Matriz no aprueba a matriz, entonces la funcion tendra como salida un ValueError.
+
+        Caso 3: Matriz_Inversa(matriz)
+
+            Si matriz no es aprobada por la funcion Verificacion_1,la misma retornara el caso correspondiente a los lineamientos
+            de la misma."""
     if Determinante_Matriz(matriz)!=0:
         if Verificacion_1(matriz):
         	mIdentidad = [[0 for i in range(0, len(matriz))]
@@ -181,17 +292,34 @@ def Matriz_Inversa(matriz):
         return matriz
     else:
         raise ValueError("La matriz ingresada no posee inversa, debido a que su determinante es igual a cero.")
-#print("\nMatriz Inversa",Arreglo_Matricial(Matriz_Inversa([[1,0,0],[0,1,0],[0,0,1]])))
+#print("\nMatriz Inversa",Arreglo_Matricial(Matriz_Inversa([["hola",0,0],[0,1,0],[0,0,1]])))
 
 def Resolucion_Sistema_de_Ecuaciones(matriz_A,matriz_B):
     """Seccion de Ayuda para la Funcion Resolucion_Sistema_de_Ecuaciones en el modulo Modulo_Algebra:
 
     Descripcion de la Funcion Resolucion_Sistema_de_Ecuaciones:
 
+        El objetivo de la funcion Resolucion_Sistema_de_Ecuaciones, es dar el resultado del sistema ecuaciones ingresado
+        en forma matricial, es decir matriz_A y matriz_B.
+
     Funciones que se pueden utilizar:
 
-    Dos argumentos: """
+    Dos argumentos:
+
+        Caso 1: Resolucion_Sistema_de_Ecuaciones(matriz_A,matriz_B)
+
+            Si la funcion Verificacion_1 aprueba a matriz_A y matriz_B, entonces la funcion retornara la funcion Producto_Matricial
+            aplicada a matriz_A (la cual tiene aplicada la funcion Matriz_Inversa) y a matriz_B.
+
+        Caso 2: Resolucion_Sistema_de_Ecuaciones(matriz_A,matriz_B)
+
+            Si matriz_A y matriz_B no son aprobadas por la funcion Verificacion_1,la misma retornara el caso correspondiente a los lineamientos
+            de la misma.
+
+        Caso 3: Resolucion_Sistema_de_Ecuaciones(matriz_A,matriz_B)
+
+            Si matriz_A y matriz_B  son aprobadas por la funcion Verificacion_1, pero no son aprobadas por la funcion Producto_Matricial
+            o la funcion Matriz_Inversa, las mismas retornaran el caso correspondiente a los lineamientos de la cada una de ellas."""
     if Verificacion_1(matriz_A) and Verificacion_1(matriz_B):
-        print("\nEl resultado del sistema de ecuaciones es:\n")
         return Producto_Matricial(Matriz_Inversa(matriz_A),matriz_B)
-#print(Resolucion_Sistema_de_Ecuaciones([[1,2,4],[3,4,5],[5,6,5]],[[2],[1],[3]]))
+#print("\nEl resultado del sistema de ecuaciones es:",Resolucion_Sistema_de_Ecuaciones([[1,1,4],[3,1,5],[5,9,5]],[[2],[1],[3]]))
