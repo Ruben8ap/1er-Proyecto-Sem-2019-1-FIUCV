@@ -14,13 +14,13 @@
   Módulo Algebra:
   
     *Verificacion_1
-    *Arreglo_Matricial (falta DocString)
+    *Arreglo_Matricial 
     *Producto_Cruz
     *Transpuesta_Matriz
     *Determinante_Matriz
     *Producto_Matricial
-    *crearUno (falta DocString)
-    *crearCero (falta DocString)
+    *crearUno 
+    *crearCero 
     *Matriz_Inversa
     *Resolucion_Sistema_de_Ecuaciones
     
