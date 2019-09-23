@@ -144,7 +144,8 @@ def Determinante_Matriz(matriz):
 
     Descripcion de la Funcion Determinante_Matriz:
 
-        El objetivo de la funcion Determinante_Matriz es mostrar el determinante del argumento matriz.
+        El objetivo de la funcion Determinante_Matriz es mostrar el determinante del argumento matriz, utilizando el
+        método de triangulación superior.
 
     Funcionamiento de la funcion Determinante_Matriz:
 
@@ -270,7 +271,8 @@ def Matriz_Inversa(matriz):
 
     Descripcion de la Funcion Matriz_Inversa:
 
-        El ojetivo de la funcion Matriz_Inversa, es proporcionar al usuario la matriz inversa del argumento matriz.
+        El ojetivo de la funcion Matriz_Inversa, es proporcionar al usuario la matriz inversa del argumento matriz utilizando
+        el metodo de Gauss Jordan.
 
     Funcionamiento de la funcion Matriz_Inversa:
 
