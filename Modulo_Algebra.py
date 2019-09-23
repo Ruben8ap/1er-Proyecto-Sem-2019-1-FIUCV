@@ -222,7 +222,7 @@ def Producto_Matricial(A,B):
             for j in range(len(B[0])):
                 for k in range(len(B)): C [i][j] += A[i][k]*B[k][j]
         return C
-#print("\nResultado de la multiplicaión de matrices\n",Arreglo_Matricial(Producto_Matricial([[1,0,0],[0,0,0],[0,0,0]],[[1,0,0],[0,1,0],[0,0,1]])))
+#print("\nResultado de la multiplicación de matrices\n",Arreglo_Matricial(Producto_Matricial([[1,0,0],[0,0,0],[0,0,0]],[[1,0,0],[0,1,0],[0,0,1]])))
 
 def crearUno(fila, pos):
     """Seccion de Ayuda para la Funcion crearUno en el modulo Modulo_Algebra:
